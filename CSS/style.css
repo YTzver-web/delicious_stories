@@ -1,0 +1,562 @@
+/* Базовые стили */
+body {
+    margin: 0;
+    font-family: 'Inria Sans', sans-serif;
+}
+
+/* Шапка сайта */
+.header {
+    width: 100%;
+    height: 120px;
+    background-color: rgba(4, 101, 247, 0.48);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.logo {
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.title {
+    color: #D53322;
+    font-size: 2.5rem;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+    padding: 0 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icons img {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+}
+
+/* Основной контент */
+.main-content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Стили для доставки */
+.dostavka {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+    width: 100%;
+}
+
+.texblock {
+    width: 100%;
+    max-width: 800px;
+    /* height: auto;  Можно убрать, если min-height достаточно */
+    min-height: 200px;
+    background-color: rgba(72, 149, 239, 0.7);
+    border-radius: 10px;
+    font-size: 1.8rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.car img {
+    max-width: 100%;
+    height: auto;
+}
+
+.license_and_quality {
+    width: 100%;
+    /* height: auto;  Можно убрать, если min-height достаточно */
+    min-height: 80px;
+    background-color: rgba(72, 149, 239, 0.7);
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.perehod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+    width: 100%;
+}
+
+.ramkap {
+    width: 100%;
+    max-width: 400px;
+    /* height: auto;  Можно убрать, если фиксированная высота не нужна */
+    background-color: rgba(72, 149, 239, 0.7);
+    margin-top: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.k_pokupkam {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: center;
+}
+
+.k_pokupkam a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.vetrina img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+/*Стили форм авторизации и регистрации*/
+.form {
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+    margin-top: 20px;
+    width: 700px;
+    height: 520px;
+    background-color: rgba(72, 149, 239, 0.7);
+}
+input {
+    margin-top: 30px;
+    height: 50px;
+    width: 500px;
+}
+
+.enter {
+    margin-left: 15%;
+}
+
+button {
+    background-color: #D9D9D9;
+    border-radius: 25px;
+    margin-top: 35px;
+    height: 40px;
+    width: 200px;
+}
+label {
+    text-align: left;
+    display: block; 
+    margin-left: 100px;
+}
+.form2 {
+    justify-content: center;
+    margin-left: 25%;
+    margin-top: 20px;
+    width: 700px;
+    height: 520px;
+    background-color: rgba(72, 149, 239, 0.7);
+}
+.form2__input {
+    margin-top: 10px;
+    margin-left: 15%;
+}
+
+.url_reg {
+    margin-top: 40px;
+}
+.rega {
+    text-decoration: none;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center; /* Выравнивание по центру вертикально */
+    margin: 20px 0;
+}
+
+.cb {
+    margin: 0 10px 0 0; /* Отступ справа */
+    width: 18px;
+    height: 18px;
+}
+
+.checkbox-container label {
+    margin: 0;
+    cursor: pointer;
+}
+
+/* Стили для элементов корзины */
+.cat {
+    width: 96%;
+    height: 56px;
+    background-color: rgba(72, 149, 239, 0.7);
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 1%;
+    font-size: 35pt;
+    font-style: italic;
+    text-align: center;
+    display: flex;
+    margin-left: 2%;
+    justify-content: space-between;
+}
+
+.line {
+    width: 96%;
+    height: 350px;
+    background-color: rgba(72, 149, 239, 0.7);
+    margin-top: 1%;
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kupit {
+    margin-top: 2%;
+    margin-left: 10%;
+}
+
+.gr {
+    margin: 1%;
+}
+
+/* Стили для страницы корзины */
+/* Стили для страницы "О нас" */
+.about-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    color: #333;
+}
+
+.about-container h1 {
+    color: #D53322;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.about-map {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text h2, .about-map h2 {
+    color: #0465F7;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #D9D9D9;
+    padding-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-text ul {
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.about-text li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    position: relative;
+    padding-left: 25px;
+}
+
+.about-text li:before {
+    content: "•";
+    color: #D53322;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -3px;
+}
+
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    border: 1px solid #D9D9D9;
+}
+
+.address {
+    font-size: 1.1rem;
+    text-align: center;
+    font-style: italic;
+    color: #555;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .about-text, .about-map {
+        width: 100%;
+    }
+    
+    .about-container h1 {
+        font-size: 2rem;
+    }
+    
+    .about-text h2, .about-map h2 {
+        font-size: 1.5rem;
+    }
+    
+    .about-text {
+        padding: 15px;
+    }
+}
+
+/* ================== */
+/* СТИЛИ ДЛЯ МЕНЮ */
+/* ================== */
+
+.menu-container {
+    position: relative;
+    display: inline-block;
+    z-index: 1000;
+}
+
+.menu-icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    z-index: 100;
+}
+
+.menu-icon:hover {
+    transform: scale(1.1);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    min-width: 200px;
+    background: rgba(72, 149, 239, 0.95); /* Меньшая прозрачность для лучшей читаемости */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Меньше тень */
+    z-index: 1001; /* Увеличен z-index на всякий случай */
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    margin-top: 5px;
+    /* padding: 5px 0;  Убрано, т.к. padding задан для ссылок */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Убрано, т.к. есть blur */
+    animation: menuFade 0.3s ease-out;
+}
+
+.dropdown-menu.active {
+    display: block;
+    /* animation: fadeIn 0.3s ease-out;  Заменено на menuFade */
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 20px;
+    color: #fff !important;
+    text-decoration: none;
+    font-size: 1rem; /* Приведение к относительным единицам */
+    transition: all 0.3s;
+    border-left: 3px solid transparent;
+    /* margin: 2px 0; Убрано, т.к. добавляет лишний отступ */
+}
+
+.dropdown-menu a:hover {
+    background: rgba(4, 101, 247, 0.7) !important;
+    border-left: 3px solid #D53322;
+}
+
+.dropdown-menu a.active {
+    background: rgba(4, 101, 247, 0.5) !important;
+    font-weight: bold;
+}
+
+.user-info {
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 0.9rem; /* Приведение к относительным единицам */
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 5px;
+}
+
+.user-info span {
+    font-weight: bold;
+    color: #D53322;
+    display: block;
+}
+
+/* Анимация появления */
+@keyframes menuFade { /* Исправлено название анимации */
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .header {
+        height: 100px;
+        padding: 0 10px;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .icons img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .texblock {
+        font-size: 1.4rem;
+        padding: 15px;
+    }
+
+    .license_and_quality {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .ramkap {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+    /* Адаптивность стилей для корзины */
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item-quantity {
+        margin-top: 15px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .quantity-input {
+        width: 80px;
+    }
+
+    .checkout-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo {
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+
+    .texblock {
+        flex-direction: column;
+    }
+
+    .perehod {
+        margin-top: 20px;
+    }
+}
+/*Подвал*/
+.site-footer {
+        background-color: #f8f9fa;
+        padding: 20px 0;
+        margin-top: 50px;
+        border-top: 1px solid #e9ecef;
+    }
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-contacts a {
+        color: #D53322;
+        text-decoration: none;
+    }
+    .footer-contacts a:hover {
+        text-decoration: underline;
+    }
